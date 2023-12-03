@@ -66,5 +66,39 @@
       "record": { "victorias": 26, "derrotas": 1, "empates": 0 }
     }
   ]);
+
+  // Inserción de registros en la colección 'entrenadores'
+db.entrenadores.insert([
+  {
+    "nombre": "Coach Johnson",
+    "especialidad": "Boxeo",
+    "equipo": "Team Alpha",
+    "peleadores": ["John Doe"]
+  },
+  {
+    "nombre": "Coach Tyson",
+    "especialidad": "Kickboxing",
+    "equipo": "Iron Fist Gym",
+    "peleadores": ["Mike Tyson"]
+  },
+  {
+    "nombre": "Coach Rodriguez",
+    "especialidad": "Jiu-Jitsu",
+    "equipo": "Tiger MMA",
+    "peleadores": ["Tyson Bernard"]
+  },
+  {
+    "nombre": "Coach Wilder",
+    "especialidad": "Muay Thai",
+    "equipo": "Wilder's Warriors",
+    "peleadores": ["Deontay Wilder"]
+  },
+  {
+    "nombre": "Coach Jones",
+    "especialidad": "Wrestling",
+    "equipo": "Jackson-Wink MMA",
+    "peleadores": ["Jon Jones"]
+  }
+]);
   
   print("Base de datos del torneo creada exitosamente.");
