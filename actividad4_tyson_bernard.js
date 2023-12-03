@@ -124,5 +124,39 @@
       "experiencia": "3 años"
     }
   ]);
+
+  // Inserción de registros en la colección 'encuentros_deportivos'
+  db.encuentros_deportivos.insert([
+    {
+      "fecha": ISODate("2023-02-10T19:00:00Z"),
+      "lugar": "Octagon Arena",
+      "competidores": ["Mike Tyson", "Tyson Bernard"],
+      "arbitro_asignado": "Referee Smith"
+    },
+    {
+      "fecha": ISODate("2023-03-05T20:15:00Z"),
+      "lugar": "Thunderdome MMA",
+      "competidores": ["Deontay Wilder", "Jon Jones"],
+      "arbitro_asignado": "Referee Martinez"
+    },
+    {
+      "fecha": ISODate("2023-04-20T18:45:00Z"),
+      "lugar": "Strikeforce Arena",
+      "competidores": ["John Doe", "Tyson Bernard"],
+      "arbitro_asignado": "Referee Brown"
+    },
+    {
+      "fecha": ISODate("2023-05-15T21:30:00Z"),
+      "lugar": "Cage Warriors Stadium",
+      "competidores": ["Mike Tyson", "Jon Jones"],
+      "arbitro_asignado": "Referee Taylor"
+    },
+    {
+      "fecha": ISODate("2023-06-08T19:45:00Z"),
+      "lugar": "Warrior's Den",
+      "competidores": ["Deontay Wilder", "John Doe"],
+      "arbitro_asignado": "Referee White"
+    }
+  ]);
   
   print("Base de datos del torneo creada exitosamente.");
