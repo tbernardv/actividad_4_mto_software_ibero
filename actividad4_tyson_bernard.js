@@ -68,37 +68,61 @@
   ]);
 
   // Inserción de registros en la colección 'entrenadores'
-db.entrenadores.insert([
-  {
-    "nombre": "Coach Johnson",
-    "especialidad": "Boxeo",
-    "equipo": "Team Alpha",
-    "peleadores": ["John Doe"]
-  },
-  {
-    "nombre": "Coach Tyson",
-    "especialidad": "Kickboxing",
-    "equipo": "Iron Fist Gym",
-    "peleadores": ["Mike Tyson"]
-  },
-  {
-    "nombre": "Coach Rodriguez",
-    "especialidad": "Jiu-Jitsu",
-    "equipo": "Tiger MMA",
-    "peleadores": ["Tyson Bernard"]
-  },
-  {
-    "nombre": "Coach Wilder",
-    "especialidad": "Muay Thai",
-    "equipo": "Wilder's Warriors",
-    "peleadores": ["Deontay Wilder"]
-  },
-  {
-    "nombre": "Coach Jones",
-    "especialidad": "Wrestling",
-    "equipo": "Jackson-Wink MMA",
-    "peleadores": ["Jon Jones"]
-  }
-]);
+  db.entrenadores.insert([
+    {
+      "nombre": "Coach Johnson",
+      "especialidad": "Boxeo",
+      "equipo": "Team Alpha",
+      "peleadores": ["John Doe"]
+    },
+    {
+      "nombre": "Coach Tyson",
+      "especialidad": "Kickboxing",
+      "equipo": "Iron Fist Gym",
+      "peleadores": ["Mike Tyson"]
+    },
+    {
+      "nombre": "Coach Rodriguez",
+      "especialidad": "Jiu-Jitsu",
+      "equipo": "Tiger MMA",
+      "peleadores": ["Tyson Bernard"]
+    },
+    {
+      "nombre": "Coach Wilder",
+      "especialidad": "Muay Thai",
+      "equipo": "Wilder's Warriors",
+      "peleadores": ["Deontay Wilder"]
+    },
+    {
+      "nombre": "Coach Jones",
+      "especialidad": "Wrestling",
+      "equipo": "Jackson-Wink MMA",
+      "peleadores": ["Jon Jones"]
+    }
+  ]);
+
+  // Inserción de registros en la colección 'arbitros'
+  db.arbitros.insert([
+    {
+      "nombre": "Referee Smith",
+      "experiencia": "7 años"
+    },
+    {
+      "nombre": "Referee Martinez",
+      "experiencia": "4 años"
+    },
+    {
+      "nombre": "Referee Brown",
+      "experiencia": "6 años"
+    },
+    {
+      "nombre": "Referee Taylor",
+      "experiencia": "8 años"
+    },
+    {
+      "nombre": "Referee White",
+      "experiencia": "3 años"
+    }
+  ]);
   
   print("Base de datos del torneo creada exitosamente.");
