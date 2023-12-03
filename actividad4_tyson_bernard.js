@@ -234,3 +234,6 @@
 
   // Lista todos los deportistas (peleadores) de la base de datos
   db.deportistas.find();
+
+  // Eliminación del peleador Edwin Daza
+  db.deportistas.remove({ "nombre": "Edwin Daza" });
