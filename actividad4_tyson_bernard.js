@@ -209,3 +209,28 @@
     { "nombre": "Tyson Bernard" },
     { $set: { "nombre": "Tyson Bernard Villada" } }
   );
+
+  /*
+  // Inserción de un nuevo peleador Santiago Lopez
+  db.deportistas.insert({
+    "nombre": "Santiago Lopez",
+    "edad": 20,
+    "categoria_peso": "Pluma",
+    "equipo": "Coast Team",
+    "record": { "victorias": 2, "derrotas": 1, "empates": 0 }
+  });
+  */
+
+  /*
+  // Inserción de un nuevo peleador Edwin Daza
+  db.deportistas.insert({
+    "nombre": "Edwin Daza",
+    "edad": 38,
+    "categoria_peso": "Wélter",
+    "equipo": "New Team",
+    "record": { "victorias": 2, "derrotas": 7, "empates": 0 }
+  });
+  */
+
+  // Lista todos los deportistas (peleadores) de la base de datos
+  db.deportistas.find();
