@@ -160,42 +160,52 @@
   ]);
 
   // Inserción de registros en la colección 'resultados'
-db.resultados.insert([
-  {
-    "encuentro_id": ObjectId("5f5b8f9a227c9a7c6a855999"),
-    "ganador": "Mike Tyson",
-    "metodo": "KO",
-    "ronda": 1,
-    "tiempo": "0:52"
-  },
-  {
-    "encuentro_id": ObjectId("5f5b8f9a227c9a7c6a85599b"),
-    "ganador": "Tyson Bernard",
-    "metodo": "Decisión Unánime",
-    "ronda": 5,
-    "tiempo": "25:00"
-  },
-  {
-    "encuentro_id": ObjectId("5f5b8f9a227c9a7c6a85599c"),
-    "ganador": "Deontay Wilder",
-    "metodo": "TKO",
-    "ronda": 2,
-    "tiempo": "3:15"
-  },
-  {
-    "encuentro_id": ObjectId("5f5b8f9a227c9a7c6a85599d"),
-    "ganador": "Jon Jones",
-    "metodo": "Sumisión",
-    "ronda": 4,
-    "tiempo": "4:30"
-  },
-  {
-    "encuentro_id": ObjectId("5f5b8f9a227c9a7c6a85599e"),
-    "ganador": "Tyson Bernard",
-    "metodo": "KO",
-    "ronda": 2,
-    "tiempo": "1:10"
-  }
-]);
+  db.resultados.insert([
+    {
+      "encuentro_id": ObjectId("5f5b8f9a227c9a7c6a855999"),
+      "ganador": "Mike Tyson",
+      "metodo": "KO",
+      "ronda": 1,
+      "tiempo": "0:52"
+    },
+    {
+      "encuentro_id": ObjectId("5f5b8f9a227c9a7c6a85599b"),
+      "ganador": "Tyson Bernard",
+      "metodo": "Decisión Unánime",
+      "ronda": 5,
+      "tiempo": "25:00"
+    },
+    {
+      "encuentro_id": ObjectId("5f5b8f9a227c9a7c6a85599c"),
+      "ganador": "Deontay Wilder",
+      "metodo": "TKO",
+      "ronda": 2,
+      "tiempo": "3:15"
+    },
+    {
+      "encuentro_id": ObjectId("5f5b8f9a227c9a7c6a85599d"),
+      "ganador": "Jon Jones",
+      "metodo": "Sumisión",
+      "ronda": 4,
+      "tiempo": "4:30"
+    },
+    {
+      "encuentro_id": ObjectId("5f5b8f9a227c9a7c6a85599e"),
+      "ganador": "Tyson Bernard",
+      "metodo": "KO",
+      "ronda": 2,
+      "tiempo": "1:10"
+    }
+  ]);
   
   print("Base de datos del torneo creada exitosamente.");
+
+  /**
+   * Otras operaciones (CRUD)
+   */
+
+  // Actualización del nombre del peleador Tyson Bernard
+  db.deportistas.update(
+    { "nombre": "Tyson Bernard" },
+    { $set: { "nombre": "Tyson Bernard Villada" } }
+  );
