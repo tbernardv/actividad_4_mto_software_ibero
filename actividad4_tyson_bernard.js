@@ -210,7 +210,7 @@
     { $set: { "nombre": "Tyson Bernard Villada" } }
   );
 
-  /*
+  
   // Inserción de un nuevo peleador Santiago Lopez
   db.deportistas.insert({
     "nombre": "Santiago Lopez",
@@ -219,7 +219,7 @@
     "equipo": "Coast Team",
     "record": { "victorias": 2, "derrotas": 1, "empates": 0 }
   });
-  */
+
 
   /*
   // Inserción de un nuevo peleador Edwin Daza
