@@ -4,7 +4,7 @@
  * 
  * Estudiantes: 
  * Tyson Gilbert Bernard Villada - 100092917
- * Santiago Lopez Romero - 100093606
+ * Santiago jose Lopez Romero - 100093606
  * Edwin Eduardo Daza Franco - 100090581
  * 
  * link: https://github.com/tbernardv/actividad_4_mto_software_ibero
