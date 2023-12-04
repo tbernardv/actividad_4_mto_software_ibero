@@ -221,7 +221,6 @@
   });
 
 
-  /*
   // Inserción de un nuevo peleador Edwin Daza
   db.deportistas.insert({
     "nombre": "Edwin Daza",
@@ -230,7 +229,6 @@
     "equipo": "New Team",
     "record": { "victorias": 2, "derrotas": 7, "empates": 0 }
   });
-  */
 
   // Lista todos los deportistas (peleadores) de la base de datos
   db.deportistas.find();
